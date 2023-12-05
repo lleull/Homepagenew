@@ -1,0 +1,90 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+
+  @media (width < 800px) {
+    margin-bottom: 25px;
+  }
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  @media (width < 800px) {
+    display: none;
+  }
+}
+.list {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.664);
+}
+.list:hover {
+  font-size: 15px;
+  color: rgba(255, 8, 8, 0.664);
+}
+.icon {
+  display: none;
+  width: 50px;
+  height: 50px;
+  @media (width < 800px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.iconspage {
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+}
+.toogle {
+  position: absolute;
+  background: white;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  left: 20%;
+  width: 80%;
+  height: 100%;
+  animation: sidetoogle 1s ease-in;
+  z-index: 40;
+}
+@keyframes sidetoogle {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  0% {
+    opacity: 1;
+    transform: translateX(100px);
+  }
+}
+li {
+  list-style: none;
+  margin-left: 30px;
+  font-weight: 500;
+}
+.tooglelist {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: center;
+
+  gap: 23px;
+}
+.iconscancel {
+  margin-left: 80%;
+  width: 30px;
+  height: 30px;
+}

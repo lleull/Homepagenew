@@ -1,0 +1,96 @@
+.mainpage {
+  width: 100%;
+
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+  @media (width < 800px) {
+    flex-direction: column;
+  }
+}
+.left {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  @media (width < 800px) {
+    width: 100%;
+  }
+ 
+}
+.leftbottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  @media (width < 800px) {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.bright {
+  width: 80%;
+  font-size: 40px;
+  font-weight: 900;
+}
+.head {
+  width: 90%;
+
+  font-size: 30px;
+  font-weight: 900;
+}
+.leftbox {
+  width: 70%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+p {
+  font-size: 13px;
+  color: rgb(114, 116, 117);
+}
+.read {
+  padding: 10px 30px;
+  background: rgb(8, 8, 39);
+  color: white;
+  letter-spacing: 1px;
+  border: none;
+  width: 50%;
+  font-size: 11px;
+}
+/* right */
+
+.right {
+  width: 40%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (width < 800px) {
+    width: 90%;
+  }
+}
+h2 {
+  font-size: 28px;
+  color: orange;
+}
+h3 {
+  color: white;
+  font-size: 16px;
+}
+.rightin {
+  width: 80%;
+}
+p {
+  padding: 10px 0;
+}
+.righttext {
+  border-bottom: 1px solid rgb(122, 110, 110);
+  margin: o;
+}
